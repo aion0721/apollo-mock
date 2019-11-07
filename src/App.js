@@ -21,8 +21,6 @@ function App() {
         <Route exact path="/mokuhyoukannri" component={mokuhyoukannri} />
         <Route exact path="/jissekikannri" component={jissekikannri} />
         <Route exact path="/jissekisyousai" component={jissekisyousai} />
-        <Route exact path="/profile" component={profile} />
-        <Route exact path="/target_registry" component={target_registry} />
       </BrowserRouter>
     </div>
   );
