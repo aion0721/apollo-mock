@@ -7,8 +7,6 @@ import profile from "./components/profile";
 import mokuhyoukannri from "./components/mokuhyoukannri";
 import jissekikannri from "./components/jissekikannri";
 import jissekisyousai from "./components/jissekisyousai";
-import Home from "./components/Home";
-import profile from "./components/profile";
 import target_registry from "./components/target_registry";
 
 function App() {
@@ -22,7 +20,6 @@ function App() {
         <Route exact path="/jissekikannri" component={jissekikannri} />
         <Route exact path="/jissekisyousai" component={jissekisyousai} />
         <Route exact path="/profile" component={profile} />
-        <Route exact path="/" component={Home} />
         <Route exact path="/target_registry" component={target_registry} />
       </BrowserRouter>
     </div>
