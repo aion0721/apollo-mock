@@ -7,6 +7,7 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -19,7 +20,14 @@ const useStyles = makeStyles(theme => ({
   textField: {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
-    width: 300,
+    width: 300 ,
+  },
+  button: { 
+    margin: theme.spacing(1),
+    width: 200 ,
+  },
+  input: {
+    display: 'none',
   },
 }));
 
@@ -31,7 +39,7 @@ export default function ComposedTextField() {
   const labelRef = React.useRef(null);
   const classes = useStyles();
   React.useEffect(() => {
-    setLabelWidth(labelRef.current.offsetWidth);
+    setLabelWidth(labelRef.current);
   }, []);
 
   const [state, setState] = React.useState({
@@ -60,7 +68,8 @@ export default function ComposedTextField() {
           inputProps={{
             name: 'age',
             id: 'age-native-helper',
-          }}        >
+          }}
+        >
           <option value="" />
           <option value={10}>Ten</option>
           <option value={20}>Twenty</option>
@@ -70,109 +79,68 @@ export default function ComposedTextField() {
       </div>
       <div className = {classes.div1}>
       <Typography variant="h6" gutterBottom>
-        所属部署
+        総勉強時間
       </Typography>
-      <FormControl className={classes.formControl}> 
-        <InputLabel htmlFor="age-native-helper"></InputLabel>
-        <NativeSelect
-          value={state.age}
-          onChange={handleChange('age')}
-          inputProps={{
-            name: 'age',
-            id: 'age-native-helper',
-          }}
-        >
-          <option value="" />
-          <option value={10}>Ten</option>
-          <option value={20}>Twenty</option>
-          <option value={30}>Thirty</option>
-        </NativeSelect>
-        </FormControl> 
+        <TextField
+          label=""
+          defaultValue=""
+          className={classes.textField}
+          margin="normal"
+          variant="outlined"
+        />
         </div>
         <div className = {classes.div1}>
         <Typography variant="h6" gutterBottom>
-        担当エリア
-      </Typography>
-      <FormControl className={classes.formControl}>
-        <InputLabel htmlFor="age-native-helper"></InputLabel>
-        <NativeSelect
-          value={state.age}
-          onChange={handleChange('age')}
-          inputProps={{
-            name: 'age',
-            id: 'age-native-helper',
-          }}
-        >
-          <option value="" />
-          <option value={10}>基盤</option>
-          <option value={20}>業務</option>
-          <option value={30}>運用</option>
-        </NativeSelect>
-        </FormControl> 
-        </div>
-        <div className = {classes.div1}>
-        <Typography variant="h6" gutterBottom>
-       興味や関心のある分野、技術
-      </Typography>
-      <FormControl>
-      <NativeSelect
-          value={state.age}
-          onChange={handleChange('age')}
-          inputProps={{
-            name: 'age',
-            id: 'age-native-helper',
-          }}
-        >
-          <option value="" />
-          <option value={10}>Ten</option>
-          <option value={20}>Twenty</option>
-          <option value={30}>Thirty</option>
-        </NativeSelect>
-       
-      <NativeSelect
-          value={state.age}
-          onChange={handleChange('age')}
-          inputProps={{
-            name: 'age',
-            id: 'age-native-helper',
-          }}
-        >
-          <option value="" />
-          <option value={10}>Ten</option>
-          <option value={20}>Twenty</option>
-          <option value={30}>Thirty</option>
-        </NativeSelect>
-       <NativeSelect
-          value={state.age}
-          onChange={handleChange('age')}
-          inputProps={{
-            name: 'age',
-            id: 'age-native-helper',
-          }}
-        >
-          <option value="" />
-          <option value={10}>Ten</option>
-          <option value={20}>Twenty</option>
-          <option value={30}>Thirty</option>
-        </NativeSelect>
-        </FormControl> 
-          </div>
-          <div className = {classes.div1}>
-        <Typography variant="h6" gutterBottom>
-        コメント（プロフィールや経歴など）
+        使用した参考書/教材
       </Typography>
       <TextField
+          label=""
+          defaultValue=""
+          className={classes.textField}
+          margin="normal"
+          variant="outlined"
+        />
+        </div>
+        <div className = {classes.div1}>
+        <Typography variant="h6" gutterBottom>
+          点数
+        </Typography>
+        <TextField
           id="outlined-multiline-static"
-          label="コメント"
+          label=""
           multiline
-          rows="4"
+          rows="2"
           defaultValue=""
           className={classes.textField}
           margin="normal"
           variant="outlined"
         />
           </div>
+          <div className = {classes.div1}>
+          <br></br>
+        <Typography variant="h6" gutterBottom>
+          合格記
+          （具体的な勉強方法、テストの感想、アドバイス等）  
+        </Typography>
+      <TextField
+          id="outlined-multiline-static"
+          label=""
+          multiline
+          rows="7"
+          defaultValue=""
+          className={classes.textField}
+          margin="normal"
+          variant="outlined"
+        />
+          </div>
+          <div className = {classes.div1}>
+           <br></br>
+           <br></br>
+           <br></br> 
+         <Button variant="contained" color="primary" className={classes.button}>
+          合格記を投稿
+         </Button>
+      </div>
     </Container>
-    
   );
         }
