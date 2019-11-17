@@ -7,8 +7,8 @@ import profile from "./components/profile";
 import mokuhyoukannri from "./components/mokuhyoukannri";
 import jissekikannri from "./components/jissekikannri";
 import jissekisyousai from "./components/jissekisyousai";
-import target_registry from "./components/target_registry";
 import Top from "./components/Top";
+import sns_overview from "./components/sns_overview";
 
 function App() {
   return (
@@ -21,7 +21,8 @@ function App() {
         <Route exact path="/mokuhyoukannri" component={mokuhyoukannri} />
         <Route exact path="/jissekikannri" component={jissekikannri} />
         <Route exact path="/jissekisyousai" component={jissekisyousai} />
-      </BrowserRouter>
+        <Route exact path="/sns_overview" component={sns_overview} />
+        </BrowserRouter>
     </div>
   );
 }
