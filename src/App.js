@@ -8,6 +8,10 @@ import mokuhyoukannri from "./components/mokuhyoukannri";
 import jissekikannri from "./components/jissekikannri";
 import jissekisyousai from "./components/jissekisyousai";
 import Top from "./components/Top";
+import mokuhyouichirann from "./components/mokuhyouichirann";
+import jissekitouroku from "./components/jissekitouroku";
+import confirmprofile from "./components/confirmprofile";
+import confirmprofileother from "./components/confirmprofileother";
 import sns_overview from "./components/sns_overview";
 
 function App() {
@@ -21,6 +25,10 @@ function App() {
         <Route exact path="/mokuhyoukannri" component={mokuhyoukannri} />
         <Route exact path="/jissekikannri" component={jissekikannri} />
         <Route exact path="/jissekisyousai" component={jissekisyousai} />
+        <Route exact path="/mokuhyouichirann" component={mokuhyouichirann} />
+        <Route exact path="/jissekitouroku" component={jissekitouroku} />
+        <Route exact path="/confirmprofile" component={confirmprofile} />
+        <Route exact path="/confirmprofileother" component={confirmprofileother} />
         <Route exact path="/sns_overview" component={sns_overview} />
         </BrowserRouter>
     </div>
