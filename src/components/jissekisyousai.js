@@ -48,23 +48,6 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const useStyles2 = makeStyles({
-    card: {
-      minWidth: 275,
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '10px',
-      transform: 'scale(0.8)',
-    },
-    title: {
-      fontSize: 14,
-    },
-    pos: {
-      marginBottom: 'opx',
-    },
-});
-
 export default function SimpleTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);

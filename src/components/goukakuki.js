@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import NativeSelect from '@material-ui/core/NativeSelect';
@@ -31,16 +30,8 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-
-
 export default function ComposedTextField() {
-
-  const [labelWidth, setLabelWidth] = React.useState(0);
-  const labelRef = React.useRef(null);
   const classes = useStyles();
-  React.useEffect(() => {
-    setLabelWidth(labelRef.current);
-  }, []);
 
   const [state, setState] = React.useState({
     age: '',
@@ -52,7 +43,6 @@ export default function ComposedTextField() {
       [name]: event.target.value,
     });
   };
-
 
   return (
     <Container className={classes.container}>

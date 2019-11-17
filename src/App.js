@@ -7,12 +7,14 @@ import profile from "./components/profile";
 import mokuhyoukannri from "./components/mokuhyoukannri";
 import jissekikannri from "./components/jissekikannri";
 import jissekisyousai from "./components/jissekisyousai";
-import target_registry from "./components/target_registry";
 import Top from "./components/Top";
 import mokuhyouichirann from "./components/mokuhyouichirann";
 import jissekitouroku from "./components/jissekitouroku";
 import confirmprofile from "./components/confirmprofile";
 import confirmprofileother from "./components/confirmprofileother";
+import sinncyokukannri from "./components/sinncyokukannri";
+import resistersns from "./components/resistersns";
+import notification from "./components/notification";
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
         <Route exact path="/jissekitouroku" component={jissekitouroku} />
         <Route exact path="/confirmprofile" component={confirmprofile} />
         <Route exact path="/confirmprofileother" component={confirmprofileother} />
+        <Route exact path="/sinncyokukannri" component={sinncyokukannri} />
+        <Route exact path="/resistersns" component={resistersns} />
+        <Route exact path="/notification" component={notification} />
       </BrowserRouter>
     </div>
   );
