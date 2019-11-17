@@ -7,6 +7,7 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -20,6 +21,12 @@ const useStyles = makeStyles(theme => ({
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
     width: 300,
+  },
+  button: { 
+    margin: theme.spacing(1),
+  },
+  input: {
+    display: 'none',
   },
 }));
 
@@ -164,7 +171,11 @@ export default function ComposedTextField() {
           variant="outlined"
         />
           </div>
+          <div className = {classes.div1}>
+         <Button variant="contained" color="primary" className={classes.button}>
+        プロフィールを更新
+      </Button>
+      </div>
     </Container>
-    
   );
         }
