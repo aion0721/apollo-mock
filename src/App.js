@@ -7,12 +7,12 @@ import profile from "./components/profile";
 import mokuhyoukannri from "./components/mokuhyoukannri";
 import jissekikannri from "./components/jissekikannri";
 import jissekisyousai from "./components/jissekisyousai";
-import target_registry from "./components/target_registry";
 import Top from "./components/Top";
 import mokuhyouichirann from "./components/mokuhyouichirann";
 import jissekitouroku from "./components/jissekitouroku";
 import confirmprofile from "./components/confirmprofile";
 import confirmprofileother from "./components/confirmprofileother";
+import sns_overview from "./components/sns_overview";
 
 function App() {
   return (
@@ -29,7 +29,8 @@ function App() {
         <Route exact path="/jissekitouroku" component={jissekitouroku} />
         <Route exact path="/confirmprofile" component={confirmprofile} />
         <Route exact path="/confirmprofileother" component={confirmprofileother} />
-      </BrowserRouter>
+        <Route exact path="/sns_overview" component={sns_overview} />
+        </BrowserRouter>
     </div>
   );
 }
