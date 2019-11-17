@@ -8,6 +8,9 @@ import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button'
 
 const useStyles1 = makeStyles(theme => ({
+  button: {
+    display: 'block',
+  },
   formControl: {
     minWidth: 200,
   },
@@ -97,7 +100,7 @@ export default function DatePickers() {
       </FormControl>
       <br></br>
       <br></br>
-        受験予定日
+        実績登録日
       <form className={classes2.container} noValidate>
       <TextField
         id="date"
@@ -110,9 +113,9 @@ export default function DatePickers() {
       />
       </form>
       <br></br>
-        目標勉強時間
+        実績勉強時間
       <br></br>  
-      <FormControl className={classes3.formContro3}>
+      <FormControl className={classes3.formControl3}>
       <InputLabel id="demo-controlled-open-select-label3"></InputLabel>
       <Select
         labelId="demo-controlled-open-select-label3"
@@ -123,32 +126,32 @@ export default function DatePickers() {
         value={hour}
         onChange={handleChange2}
       >
-        <MenuItem value={1}>週1時間</MenuItem>
-        <MenuItem value={2}>週2時間</MenuItem>
-        <MenuItem value={3}>週3時間</MenuItem>
-        <MenuItem value={4}>週4時間</MenuItem>
-        <MenuItem value={5}>週5時間</MenuItem>
-        <MenuItem value={6}>週6時間</MenuItem>
-        <MenuItem value={7}>週7時間</MenuItem>
-        <MenuItem value={8}>週8時間</MenuItem>
-        <MenuItem value={9}>週9時間</MenuItem>
-        <MenuItem value={10}>週10時間</MenuItem>
-        <MenuItem value={11}>週11時間</MenuItem>
-        <MenuItem value={12}>週12時間</MenuItem>
-        <MenuItem value={13}>週13時間</MenuItem>
-        <MenuItem value={14}>週14時間</MenuItem>
-        <MenuItem value={15}>週15時間</MenuItem>
-        <MenuItem value={16}>週16時間</MenuItem>
-        <MenuItem value={17}>週17時間</MenuItem>
-        <MenuItem value={18}>週18時間</MenuItem>
-        <MenuItem value={19}>週19時間</MenuItem>
-        <MenuItem value={20}>週20時間</MenuItem>
+        <MenuItem value={1}>1時間</MenuItem>
+        <MenuItem value={2}>2時間</MenuItem>
+        <MenuItem value={3}>3時間</MenuItem>
+        <MenuItem value={4}>4時間</MenuItem>
+        <MenuItem value={5}>5時間</MenuItem>
+        <MenuItem value={6}>6時間</MenuItem>
+        <MenuItem value={7}>7時間</MenuItem>
+        <MenuItem value={8}>8時間</MenuItem>
+        <MenuItem value={9}>9時間</MenuItem>
+        <MenuItem value={10}>10時間</MenuItem>
+        <MenuItem value={11}>11時間</MenuItem>
+        <MenuItem value={12}>12時間</MenuItem>
+        <MenuItem value={13}>13時間</MenuItem>
+        <MenuItem value={14}>14時間</MenuItem>
+        <MenuItem value={15}>15時間</MenuItem>
+        <MenuItem value={16}>16時間</MenuItem>
+        <MenuItem value={17}>17時間</MenuItem>
+        <MenuItem value={18}>18時間</MenuItem>
+        <MenuItem value={19}>19時間</MenuItem>
+        <MenuItem value={20}>20時間</MenuItem>
         </Select>
       </FormControl>
       <br></br>
       <br></br>
       <Button variant="contained" size="large" color="primary" className={classes4.margin}>
-         目標を追加する
+        実績を登録する
       </Button>
     </div>
   );
