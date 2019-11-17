@@ -12,6 +12,9 @@ import mokuhyouichirann from "./components/mokuhyouichirann";
 import jissekitouroku from "./components/jissekitouroku";
 import confirmprofile from "./components/confirmprofile";
 import confirmprofileother from "./components/confirmprofileother";
+import sinncyokukannri from "./components/sinncyokukannri";
+import resistersns from "./components/resistersns";
+import notification from "./components/notification";
 import sns_overview from "./components/sns_overview";
 
 function App() {
@@ -29,6 +32,10 @@ function App() {
         <Route exact path="/jissekitouroku" component={jissekitouroku} />
         <Route exact path="/confirmprofile" component={confirmprofile} />
         <Route exact path="/confirmprofileother" component={confirmprofileother} />
+        <Route exact path="/sinncyokukannri" component={sinncyokukannri} />
+        <Route exact path="/resistersns" component={resistersns} />
+        <Route exact path="/notification" component={notification} />
+      </BrowserRouter>
         <Route exact path="/sns_overview" component={sns_overview} />
         </BrowserRouter>
     </div>

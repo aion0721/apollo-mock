@@ -34,12 +34,8 @@ const useStyles = makeStyles(theme => ({
 
 export default function ComposedTextField() {
 
-  const [labelWidth, setLabelWidth] = React.useState(0);
   const labelRef = React.useRef(null);
   const classes = useStyles();
-  React.useEffect(() => {
-    setLabelWidth(labelRef.current.offsetWidth);
-  }, []);
 
   const [state, setState] = React.useState({
     age: '',
