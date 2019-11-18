@@ -17,6 +17,7 @@ import resistersns from "./components/resistersns";
 import notification from "./components/notification";
 import confirmgoukakuki from "./components/confirmgoukakuki";
 import goukakukiichirann from "./components/goukakukiichirann";
+import sns_overview from "./components/sns_overview";
 
 function App() {
   return (
@@ -38,7 +39,8 @@ function App() {
         <Route exact path="/notification" component={notification} />
         <Route exact path="/confirmgoukakuki" component={confirmgoukakuki} />
         <Route exact path="/goukakukiichirann" component={goukakukiichirann} />
-      </BrowserRouter>
+        <Route exact path="/sns_overview" component={sns_overview} />
+        </BrowserRouter>
     </div>
   );
 }
