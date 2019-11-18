@@ -15,6 +15,8 @@ import confirmprofileother from "./components/confirmprofileother";
 import sinncyokukannri from "./components/sinncyokukannri";
 import resistersns from "./components/resistersns";
 import notification from "./components/notification";
+import confirmgoukakuki from "./components/confirmgoukakuki";
+import goukakukiichirann from "./components/goukakukiichirann";
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         <Route exact path="/sinncyokukannri" component={sinncyokukannri} />
         <Route exact path="/resistersns" component={resistersns} />
         <Route exact path="/notification" component={notification} />
+        <Route exact path="/confirmgoukakuki" component={confirmgoukakuki} />
+        <Route exact path="/goukakukiichirann" component={goukakukiichirann} />
       </BrowserRouter>
     </div>
   );

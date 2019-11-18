@@ -40,14 +40,22 @@ export default function LetterAvatars() {
         </Grid>
       </ListItem>
       <Divider />
-      <ListItem>
+      <ListItem> 
+        <Grid container className={classes2.root}>
+        <Grid item xs={1}>
         <AlarmIcon />
+          </Grid>
         <ListItemText primary="進捗通知" secondary="今週の目標達成まであとxx時間です！" />
+        </Grid>
       </ListItem>
       <Divider />
       <ListItem>
+      <Grid container className={classes2.root}>
+        <Grid item xs={1}>
         <ImportContactsIcon />
+          </Grid>
         <ListItemText primary="合格記" secondary="xxxさんの新しい投稿がありました" />
+        </Grid>
       </ListItem>
       <Divider />
     </List> 
