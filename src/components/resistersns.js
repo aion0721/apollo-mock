@@ -37,7 +37,6 @@ export default function LetterAvatars() {
           label="コメント"
           multiline
           rows="4"
-          width="2500"
           defaultValue=""
           className={classes.textField}
           margin="normal"
