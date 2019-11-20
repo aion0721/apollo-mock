@@ -3,14 +3,16 @@ import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles(theme => ({
     root: {
       width: '100%',
+      margin: 10,
       backgroundColor: theme.palette.background.paper,
     },
   }));
-  
+
   function ListItemLink(props) {
     return <ListItem button component="a" {...props} />;
   }
@@ -27,9 +29,11 @@ const useStyles = makeStyles(theme => ({
           <ListItem button>
             <ListItemText primary="基本情報処理技術者試験" />
           </ListItem>
+          <Divider />
           <ListItemLink href="#simple-list">
             <ListItemText primary="応用情報処理技術者試験" />
           </ListItemLink>
+          <Divider />
         </List>
       </div>
     );
