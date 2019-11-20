@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
 
 //Chart
 import {
@@ -19,7 +20,6 @@ const COLORS = [
 ];
 
 function App() {
- 
   return (
    <div className="App">    
     <center>
@@ -42,6 +42,11 @@ function App() {
         <Tooltip />
       </PieChart>        
         試験日まであと（試験日-本日の日付）日 
+      <br></br>
+      <br></br>  
+        <Button variant="contained" color="primary" >
+          実績を登録する
+        </Button>
     </center>   
    </div>
   );
