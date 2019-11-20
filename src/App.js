@@ -19,6 +19,7 @@ import confirmgoukakuki from "./components/confirmgoukakuki";
 import goukakukiichirann from "./components/goukakukiichirann";
 import targetregistryNew from "./components/targetregistryNew";
 import goukakukiNew from "./components/goukakukiNew";
+import sns_overview from "./components/sns_overview";
 
 function App() {
   return (
@@ -42,7 +43,8 @@ function App() {
         <Route exact path="/goukakukiichirann" component={goukakukiichirann} />
         <Route exact path="/targetregistryNew" component={targetregistryNew} />
         <Route exact path="/goukakukiNew" component={goukakukiNew} />
-      </BrowserRouter>
+        <Route exact path="/sns_overview" component={sns_overview} />
+        </BrowserRouter>
     </div>
   );
 }
