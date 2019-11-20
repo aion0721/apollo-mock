@@ -41,7 +41,7 @@ export default function DatePickers() {
     <Container className={classes.container}>
       <div className = {classes.div1}>
       <FormControl className={classes.formControl}>
-          <InputLabel htmlFor="age-native-helper">実績勉強時間</InputLabel>
+          <InputLabel htmlFor="age-native-helper">受験資格</InputLabel>
           <NativeSelect
             inputProps={{
               name: 'age',
